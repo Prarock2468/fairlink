@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  transition: all 0.4s;
+  border-bottom: 1px solid var(--white);
+}
+.dark_header{background: var(--second_color);}
+.nav_container a,
+.nav_container {
+  color:var(--white);
+}
+.maga_menu_wrapper {
+  position: absolute;
+  max-width: 100vw;
+  background:var(--second_color);
+  left: 0;
+  top: 101%;
+  padding: 40px 0;
+  width: 100%;
+  display: none;
+}
+.auth_wrapper{align-items:center; gap: 20px;}
+.nav_container {
+    align-items: center;
+}
+
+.nav_list {
+    gap: 24px;
+}
+
+.nav_link {
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: .86px;
+    padding: 37px 0;
+    display: inline-block;
+    position: relative;
+}
+.nav_link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 65%;
+  width: 100%;
+  height: 1px;
+  background-color: #E3DED5;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_link:hover::after,.nav_link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu_col.menu_col_left {
+  max-width: 340px;
+  width: 200%;
+}
+
+h3.menu_title {
+  font-size: 186%;
+}
+
+p.menu_text {
+  margin: 10px 0 30px;
+  line-height: 144%;
+  opacity: .8;
+}
+.maga_menu_wrapper_row{
+  gap: 50px;
+}
+.menu_col.menu_col_right{
+  max-width: fit-content;
+  width: 100%;
+}
+.submenu_link {
+    font-size: 186%;
+    font-weight: 700;
+    transition: .3s all;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans';
+}
+
+li.submenu_item {
+    padding: 0px 0 30px;
+}
+
+a.submenu_link:hover {
+    color: var(--primari_color);
+}
+.submenu_link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  background-color:var(--primari_color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.submenu_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu_col.menu_col_image {
+    max-width: 350px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image_wrapper_mega {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 234px;
+    border-radius: 10px;
+    border: 2px solid var(--primari_color);
+}
+
+.image_wrapper_mega .image_menu {
+    width: 100%;
+    position: relative;
+    max-width: 350px;
+    height: 100%;
+}
+
+
+
+
+
+/*  */

@@ -1,0 +1,824 @@
+/* header css */
+.hero_banner_wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.hero_banner_wrapper img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s all;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.hero_banner_wrapper .mySwiper {
+  height: 100%;
+}
+
+.overylay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent, var(--second_color));
+}
+
+.slider_control {
+  gap: 112px;
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  width: 42px;
+  z-index: 63;
+  justify-content: center;
+  transform: translate(0px, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control_btn {
+  position: relative !important;
+  left: auto;
+  right: 0px;
+  color: #fff;
+  transform: rotate(-89deg);
+  display: block !important;
+  width: 43px;
+  top: auto !important;
+  bottom: auto !important;
+  height: 43px !important;
+  margin: auto !important;
+}
+
+.control_btn:after {
+  font-size: 11px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  border: 1px solid #fff !important;
+  display: block;
+  top: 0 !important;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.swiper-button-next .line {
+  left: -26px !important;
+}
+
+.swiper-button-prev .line {
+  left: 18px;
+}
+
+.line {
+  height: 1.5px;
+  width: 50px;
+  background: var(--white);
+  display: block;
+  top: 20px;
+  position: relative;
+  border-radius: 20px;
+}
+
+/* header css end */
+
+
+.tab_content_wrapper.active {
+  display: block;
+}
+
+.form_wrapper.active {
+  background: #fff;
+}
+
+.hotel_tab.selected {
+  color: var(--primari_color);
+  background: #fff;
+}
+
+section.form_section {
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 60px;
+}
+
+.slider_hero_wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.tab_content_wrapper {
+  display: none;
+  color: #fff;
+}
+
+.form_wrapper {
+  display: none;
+  padding: 45px;
+  border-radius: 10px;
+  margin-top: -23px;
+}
+
+.tab_list_wrapper {
+  display: flex;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin: auto;
+  box-shadow: 2px 4px 5px #2f2f2f2f;
+  position: relative;
+}
+
+.hotel_tab {
+  background: #fff;
+  color: var(--second_color);
+  padding: 12px 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel_tab i {
+  font-size: 45px;
+}
+
+.title_wrapper {
+  text-align: center;
+  max-width: 70%;
+  margin: auto auto 50px;
+}
+
+.tab_content_wrapper span {
+  font-size: 124%;
+  text-transform: capitalize;
+  color: var(--primari_color);
+  transition: .3s all;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Josefin Sans';
+}
+
+.tab_content_wrapper h1 {
+  font-size: 325%;
+  font-family: 'Libre Franklin';
+  text-shadow: 0px 6px 7px #2f2f2f2f;
+  font-weight: 700;
+}
+
+
+/* form wrapper  */
+.form_title_label {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form_container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.form_group:last-child {
+  border: 0;
+}
+
+.form_group input {
+  height: 50px;
+  border: 0;
+  min-width: 320px;
+}
+
+
+/*count  */
+section.vector_bg {
+  background: var(--second_color);
+}
+
+section.vector_bg {
+  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 4 8 / 29%)), url(./../image/bg_image.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.count_wrapper {
+  padding: 100px 0;
+  color: #fff;
+  gap: 120px;
+}
+
+.count_card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.count_card .icon {
+  font-size: 85px;
+  height: 120px;
+  width: 120px;
+  background: radial-gradient(var(--primari_color), #880E4F);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: inset 1px -20px 30px -10px #0D47A1;
+}
+
+.count {
+  font-size: 90px;
+  font-family: 'Josefin Sans';
+  font-weight: 800;
+}
+
+.count_card_card p {
+  font-size: 127%;
+  color: var(--white);
+  font-family: 'Josefin Sans';
+  opacity: .7;
+  font-weight: 300;
+}
+
+.card_left,
+.card_right {
+  width: 50%;
+}
+
+.card_left_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card_left_content_image {
+  width: 100%;
+  clip-path: polygon(50% 0%, 72% 21%, 100% 35%, 100% 70%, 84% 90%, 51% 100%, 15% 91%, 0 64%, 10% 36%, 14% 11%);
+  overflow: hidden;
+  max-height: 450px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+}
+
+.card_left_content_image img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  backdrop-filter: drop-shadow(10px 50px 86px red);
+}
+
+span.card_left_subtitle {
+  font-size: 101%;
+  text-transform: capitalize;
+  color: var(--primari_color);
+  letter-spacing: 1.4px;
+  display: block;
+}
+
+h3.card_left_title {
+  font-size: 350%;
+  margin: 10px 0 16px;
+  font-family: 'Libre Franklin';
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.card_left_content_text p {
+  font-size: 100%;
+  line-height: 178%;
+  opacity: .6;
+  letter-spacing: 1px;
+  font-family: 'Josefin Sans';
+}
+
+.card_right {
+  position: relative;
+  padding-left: 122px;
+  border-left: 2px solid #ffffff52;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.card_right::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  height: 31%;
+  width: 2px;
+  background: var(--primari_color);
+  top: 0;
+}
+
+.card_right::before {
+  position: absolute;
+  top: 29%;
+  left: -18px;
+  height: 34px;
+  width: 34px;
+  content: '';
+  background-image: url('./../image/mark.png');
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading_image {
+  max-width: 72px;
+  position: absolute;
+  top: -51%;
+  right: -61px;
+}
+
+/* hotel slider css */
+.hotel_card_wrapper {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hotel_card_image {
+  max-height: 192px;
+  height: 100%;
+  background: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.star_wrapper {
+  color: var(--primari_color);
+}
+
+.location {
+  font-size: 68%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.amenties_list span {
+  font-size: 65%;
+  font-weight: 600;
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  color: var(--text_color);
+  width: max-content;
+  display: block;
+  top: -14px;
+  z-index: 22;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all;
+  left: auto;
+  right: auto;
+  border-top: 2px;
+  border: 1px solid #251f1f59;
+  box-shadow: 2px 5px 6px -2px #2f2f2f2f;
+}
+
+.amenties_list {
+  position: relative;
+  padding: 9px 7px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #251f1f59;
+  transition: .3s all;
+}
+
+.amenties {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #251f1f59;
+}
+
+.amenties i {
+  font-size: 25px;
+}
+
+.amenties_list:hover span {
+  opacity: 1;
+  visibility: visible;
+  top: -28px;
+}
+
+.amenties_list:nth-child(4) span {
+  right: 0
+}
+
+.amenties_list:nth-child(4) {
+  border: 0;
+}
+
+.hotel_card_content h4 {
+  font-size: 123%;
+  font-family: 'Libre Franklin';
+  text-align: left;
+}
+
+.hotel_card_content {
+  padding: 25px 15px;
+}
+
+.review {
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 0;
+}
+
+p.review_text {
+  gap: 5px;
+  align-items: center;
+  font-size: 83%;
+  font-weight: 500;
+  font-family: 'Libre Franklin';
+}
+
+h5.rated {
+  line-height: normal;
+  border-right: 1px solid #251f1f59;
+  border-left: 1px solid #251f1f59;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 4px;
+}
+
+.feature_tip {
+  position: absolute;
+  z-index: 2;
+  padding: 7px 10px;
+  background: var(--primari_color);
+  font-size: 70%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  top: 15px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.best_hotel_wrapper {
+  padding: 120px 0 100px;
+  background-image: url(./../image/bg_image.svg);
+  background-color: var(--white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.amenties_list:hover {
+  background: var(--second_color);
+  color: var(--white);
+}
+
+.hotel_card_wrapper:hover img {
+  transform: scale(1.2);
+}
+
+.hotel_slider_controls {
+  align-items: center;
+  gap: 42px;
+}
+
+.hotel_controls {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto !important;
+  bottom: auto;
+  width: auto;
+  height: max-content;
+  margin-top: 0;
+}
+
+.hotel_controls::after {
+  display: none;
+}
+
+.hotel_controls i {
+  font-size: 400%;
+  color: var(--text_color);
+}
+
+.hotel_slider .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0px 5px 62px -22px #2f2f2f2f;
+}
+
+.hotel_slider .swiper-wrapper {
+  padding: 20px 0;
+}
+
+.slider_divider {
+  margin: 44px 0;
+  height: 2px;
+  background: #0d1e334f;
+  position: relative;
+}
+
+.slider_divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18%;
+  height: 100%;
+  background: var(--primari_color);
+}
+
+.best_hotel_header {
+  align-items: center;
+}
+
+.best_hotel_text {
+  font-size: 117%;
+  font-family: 'Josefin Sans';
+}
+
+.slider_divider::before {
+  position: absolute;
+  left: 17%;
+  top: -15px;
+  height: 34px;
+  width: 34px;
+  content: '';
+  background-image: url(./../image/mark.png);
+  z-index: 4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span.swiper-pagination-current {
+  font-size: 28px;
+}
+
+/* hotel slider css end */
+
+
+/* travell highlights css */
+.travell_highlights {
+  background-image: linear-gradient(rgb(255 255 255 / 0%), rgb(227 222 213 / 55%)), url(./../image/lines.png);
+  background-position: center;
+  background-size: contain;
+  padding: 120px 0;
+  position: relative;
+}
+
+.travell_row {
+  display: grid;
+  grid-template-areas:
+    'card1 card2'
+    'card3 card4';
+  gap: 53px;
+}
+
+.travell_card.travell_card_1 {
+  grid-area: card1;
+}
+
+.travell_card.travell_card_2 {
+  grid-area: card2;
+  padding: 50px 0 0 0;
+}
+
+.travell_card.travell_card_3 {
+  grid-area: card3;
+}
+
+.travell_card.travell_card_4 {
+  grid-area: card4;
+}
+
+.travell_card {
+  max-width: 550px;
+  width: 100%;
+}
+
+.travell_card {
+  max-width: 678px;
+  max-height: 451px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.travell_card_image_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+img.travell_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travell_card_content {
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #0d1e336e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.travell_card_content h3 {
+  font-size: 291%;
+  color: #fff;
+  font-family: 'Libre Franklin';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+ul.travell_ammenties {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: var(--second_color);
+}
+
+.travell_ammenties p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border-left: 1px solid #2f2f2f;
+}
+
+.travell_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+  padding: 2px 15px 2px 20px;
+  margin-top: 50px;
+}
+
+.travell_btn i {
+  font-size: 32px;
+}
+
+/* travell highlights css end */
+
+
+/* news letter css  */
+section.newsLetter_wrapper {
+  background: var(--second_color);
+  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 4 8 / 29%)), url(./../image/bg_image.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.dark_color {
+  background: var(--primari_color) !important;
+  border-color: var(--primari_color);
+  border-radius: 20px;
+}
+.news_col_right {
+    max-width: 650px;
+    display: flex;
+}
+
+.news_title {
+    font-size: 530%;
+    color: var(--white);
+    line-height: 121%;
+    position: relative;
+    width: fit-content;
+    font-family: 'Libre Franklin';
+}
+
+img.new_title_image {
+    position: absolute;
+    height: 90px;
+    top: 0px;
+    right: 45px;
+}
+
+img.news_starImage {
+    height: 83px;
+    margin-bottom: 15px;
+}
+
+p.form_news_text {
+    color: var(--white);
+    font-family: 'Josefin Sans';
+    line-height: 150%;
+    margin-bottom: 43px;
+}
+
+.subscribe_from {
+    background: var(--white);
+    max-width: 450px;
+    border-radius: 61px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.dark_color {
+    width: 120px;
+}
+
+.subscribe_from input[type="email"] {
+    max-width: calc(100% - 120px);
+    width: 100%;
+    font-family: 'Josefin Sans';
+    padding: 0 15px;
+    border: 0;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+}
+
+.news_row {
+    align-items: center;
+}
+/* news letter css end  */
