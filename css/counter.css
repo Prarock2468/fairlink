@@ -1,0 +1,52 @@
+.counter_row {
+  display: flex;
+  justify-content: center;
+}
+
+.counter_col {
+  flex: 1 1 calc(32% - 40px);
+}
+
+.stastic {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stastic i {
+  font-size: 350%;
+  color: #fff;
+  background:linear-gradient(275.06deg,#009688 13.4%,rgb(255 152 0/23%) 41.99%),linear-gradient(298.31deg,#009688 60.3%,#ff9800 109.76%);
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  border-radius: 100%;
+}
+
+h4.counter {
+  font-size: 300%;
+  font-family: 'Josefin Sans';
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.counter_wrapper {
+  padding: 50px 0;
+}
+
+.counter_col:nth-child(2) {
+  margin: 0 20px;
+  padding: 0 20px;
+  border-right: 1px solid #dad7d7;
+  border-left: 1px solid #dad7d7;
+  width: 320px;
+}
+.stastic p {
+    font-size: 175%;
+}
+.counter_left span{
+  font-family:'"Cormorant Garamond", serif';
+}
