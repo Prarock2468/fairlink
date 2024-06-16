@@ -5,7 +5,6 @@
       <div class="details_content">
         <div class="details_flex">
           <div class="flex_icon">
-            <i class="icofont-beach"></i>
           </div>
           <div class="flex_right">
             <div  class="icon_text" id="count">
@@ -17,7 +16,6 @@
         </div>
         <div class="details_flex">
           <div class="flex_icon">
-            <i class="icofont-5-star-hotel"></i>
           </div>
           <div class="flex_right">
             <div class="icon_text"  id="count2">
@@ -28,7 +26,7 @@
         </div>
         <div class="details_flex">
           <div class="flex_icon">
-            <i class="icofont-dining-table"></i>
+            
           </div>
           <div class="flex_right">
             <div class="icon_text"  id="count3">

@@ -1,8 +1,4 @@
 var swiper2 = new Swiper('#hotel_swiper', {
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
     slidesPerView: 1.6,
     centeredSlides: true,
     loop: true,
@@ -17,6 +13,13 @@ var swiper2 = new Swiper('#hotel_swiper', {
             slidesPerView: 1.1,
             spaceBetween: 10,
         }
+    },
+    pagination: {
+        el: ".event_pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="pagination_arr ' + className + '">' + (index + 1) + '<span class="arrow_pagination"></span>' + "</span>";
+        },
     },
     on: {
         slideChange: function () {
@@ -47,7 +50,7 @@ var swiper3 = new Swiper('.hotelSlider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+    },
     breakpoints: {
         640: {
             slidesPerView: 1,
@@ -61,5 +64,19 @@ var swiper3 = new Swiper('.hotelSlider', {
             slidesPerView: 3,
             spaceBetween: 30,
         }
+    }
+});
+
+
+
+
+$('.video').parent().click(function () {
+    if ($(this).children(".video").get(0).paused) {
+        $(this).children(".video").get(0).play(); $(this).children(".playpause").fadeOut();
+        $(this).children(".video").get(0).play(); $(this).children(".imageoverlay").fadeOut();
+    } else {
+        $(this).children(".video").get(0).pause();
+        $(this).children(".playpause").fadeIn();
+        $(this).children(".imageoverlay").fadeIn();
     }
 });

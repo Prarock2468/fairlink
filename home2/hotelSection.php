@@ -1,21 +1,22 @@
-
-<section class="hotel_section">
-    <div class="scrn_container">
-      <div class="hotel_content">
-        <div class="description_pseudo_title des_text hotel_text">OUR TRAVEL PLACE</div>
-        <div class="hotel_content_inner">
-          <h1 class="description_title">Travel Highlights</h1>
-          <p>All three of Rooms Hotels locations are restorations that translate historic locations into places of
-            contemporary comfort. Industrial architecture, salvaged building materials and the unique approach</p>
-        </div>
+<section class="event_section">
+  <div class="scrn_container">
+    <div class="titleHEader_wrap highlights_wrap">
+      <div class="icon_title event_section_titleIcon">
+        <img src="./image/icon/restaurant.svg" height="40">
       </div>
-
+      <div class="subtitle-text event_subtitle">OUR TRAVEL PLACE</div>
+      <h2 class="heading-title event_title description_title">Travel Highlights</h2>
+      <p class="para">All three of Rooms Hotels locations are restorations that translate historic locations into places
+        of
+        contemporary comfort. Industrial architecture, salvaged building materials and the unique approach</p>
     </div>
-    <div class="hotel_slider">
-      <div class="swiper-container hotel_swiper_container" id="hotel_swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
+  </div>
+  <div class="hotel_slider">
+    <div class="swiper-container hotel_swiper_container" id="hotel_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <a href="#">
               <div class="hotel_card">
                 <div class="hotel_card_img">
                   <img src="image/image2.jpg" alt="">
@@ -32,11 +33,13 @@
                     class="button button--aylen button--border-thin button--round-s dark_color">&#8377;3000</button>
                 </div>
               </div>
+            </a>
 
-            </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <a href="#">
               <div class="hotel_card">
                 <div class="hotel_card_img">
                   <img src="image/image2.jpg" alt="">
@@ -53,10 +56,12 @@
                     class="button button--aylen button--border-thin button--round-s dark_color">&#8377;5000</button>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <a href="#">
               <div class="hotel_card">
                 <div class="hotel_card_img">
                   <img src="image/image1.jpg" alt="">
@@ -73,10 +78,12 @@
                     class="button button--aylen button--border-thin button--round-s dark_color">&#8377;600</button>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <a href="#">
               <div class="hotel_card">
                 <div class="hotel_card_img">
                   <img src="image/image1.jpg" alt="">
@@ -93,10 +100,12 @@
                     class="button button--aylen button--border-thin button--round-s dark_color">&#8377;500</button>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <a href="#">
               <div class="hotel_card">
                 <div class="hotel_card_img">
                   <img src="image/image1.jpg" alt="">
@@ -113,12 +122,13 @@
                     class="button button--aylen button--border-thin button--round-s dark_color">&#8377;3000</button>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination event_pagination"></div>
     </div>
+  </div>
 
-  </section>
+</section>

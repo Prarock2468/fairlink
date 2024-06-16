@@ -13,7 +13,11 @@
     <link href="./css/popup.css" rel="stylesheet">
     <link href="./css/counter.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/bestHotel.css">
+    <link rel="stylesheet" href="./css/tour.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" type="text/css" href="./icofont/icofont.min.css">
+    
 </head>
 
 <body>
