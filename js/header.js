@@ -3,12 +3,13 @@ $(document).ready(function () {
     if ($(window).width() > 992) { // Change the width value according to your needs
       $(menuClass).hover(
         function () {
-          $(this).find(submenuClass).stop().slideDown();
+          $(this).find(submenuClass).addClass('show');
+
           $(this).addClass('active_item');
           $(this).find(linkClass).addClass('active');
         },
         function () {
-          $(this).find(submenuClass).stop().slideUp();
+          $(this).find(submenuClass).removeClass('show');
           $(this).removeClass('active_item');
           $(this).find(linkClass).removeClass('active');
         }
@@ -126,16 +127,16 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-  var loginHide = true;
-  if (loginHide) {
-    $('.login_menu').css('display', 'none');
-    $('.dropdown_hide').css('display', 'flex');
-  } else {
-    $('.login_menu').css('display', 'flex');
-    $('.dropdown_hide').css('display', 'none');
-  }
-});
+// $(document).ready(function () {
+//   var loginHide = true;
+//   if (loginHide) {
+//     $('.login_menu').css('display', 'none');
+//     $('.dropdown_hide').css('display', 'flex');
+//   } else {
+//     $('.login_menu').css('display', 'flex');
+//     $('.dropdown_hide').css('display', 'none');
+//   }
+// });
 
 
 

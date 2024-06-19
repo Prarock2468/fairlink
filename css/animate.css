@@ -288,7 +288,7 @@
 /* *************************event_section */
 .event_section {
     background-color: var(--second_color);
-    padding: 50px 0;
+    padding: 36px 0;
 }
 
 .event_section_titleIcon img {
@@ -310,7 +310,7 @@
 
 
 .highlights_wrap {
-    padding: 0 15% 3%;
+    padding: 0 15% 1%;
 }
 
 
@@ -366,6 +366,7 @@
     height: 100%;
     object-fit: cover;
     transition: 1s;
+
 }
 
 .hotel_card:hover img {
@@ -553,10 +554,7 @@
     padding: 100px 0;
 }
 
-.subtitle-text,
-.titleWrap_text {
-    opacity: 0;
-}
+
 
 .subtitle-text {
     position: relative;
@@ -565,7 +563,7 @@
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 85%;
+    font-size: 80%;
     color: var(--secong_color);
     opacity: .8;
 }
@@ -833,17 +831,15 @@
         margin-top: 50px;
     }
 
-    .news_card_wrapper {
-        margin-top: 15px;
-    }
 
     .best_hotels {
         padding: 50px 0;
     }
 
     .news_section {
-        padding: 50px 0;
+        padding: 14px 0 35px;
     }
+
 }
 
 @media screen and (max-width:576px) {
@@ -852,12 +848,15 @@
     justify-content: center;
     align-items: center;
 }
-
+.hotel_card img{aspect-ratio: 1;}
 .counter_col {width: 100%;}
     .hero_banner_wrapper {
         height: 70%;
+        height: 250px;
     }
-
+div#hero_slider {
+    display: none;
+}
     .hero_title {
         font-size: 160%;
     }
@@ -868,6 +867,7 @@
 
     .left_content {
         padding: 13% 0% 15%;
+        display: none;
     }
 
     .swipe--btn i {
@@ -926,7 +926,7 @@
 
     .news_card_wrapper {
         display: block;
-        margin-top: 15px;
+        margin-top: 35px;
     }
 
     .news_card {
@@ -934,9 +934,11 @@
     }
 
     .highlights_wrap {
-        padding: 50px 0;
+        padding: 0 0 15px;
     }
-
+.hotel_slider{
+    margin-top: 30px;
+}
     .counter_row {
         display: grid;
         grid-gap: 40px;
