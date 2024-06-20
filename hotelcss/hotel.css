@@ -1,0 +1,6 @@
+.banner_section{
+    height: 80vh;
+    background-image: url(../image/hero_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
