@@ -201,15 +201,19 @@
   background: var(--second_color);
   left: auto;
   height: auto;
-  top: 90%;
+  top: 108%;
   border-top: 1px solid #FFE0B2;
   padding: 0;
-  display: none;
   min-width: 150px;
   transition: .5s;
+  opacity: 0;
+  visibility: hidden;
 }
 .sub_menu_wrapper.show {
     display: block;
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 .subMenu_link.active {
   background: #112946;
@@ -307,8 +311,10 @@
   top: 0;
   padding: 0;
   min-width: 180px;
-  left: 100%;
-  display: none;
+  left: 95%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s all;
 }
 
 
@@ -605,7 +611,5 @@ footer.footer_wrapper {
 .social_link {
   font-size: 87%;
 }
-.third_level_wrapper.show {
-  display: block;
-}
+.third_level_wrapper.show {visibility: visible;opacity: 1;left: 100%;}
 
