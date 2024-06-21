@@ -1,6 +1,400 @@
-.banner_section{
+.banner_section {
     height: 80vh;
     background-image: url(../image/hero_img.jpg);
     background-position: center;
     background-size: cover;
+    padding: 50px;
+    position: relative;
+}
+.banner_title_wrapper {
+    padding: 150px 0;
+}
+.banner_title_wrapper h1{
+    font-size: 450%;
+    text-shadow: 0 0 10px #000;
+}
+.local_menu {
+    background: #0d1e33;
+    color: #fff;
+}
+.breadcrumb_head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb_head ul {
+    display: flex;
+    gap: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.breadcrumb_head ul li {
+    position: relative;
+    color: #fff;
+}
+
+.banner_section:after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0, black 1%, transparent 30%);
+}
+
+.star_tag {
+    font-size: 120%;
+    color: var(--primari_color);
+}
+
+.location_title {
+    color: grey;
+}
+
+.heading_title {
+    font-size: 240%;
+    /* font-weight: 700; */
+}
+
+.local_menu ul {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+    font-size: 115%;
+}
+
+.local_menu ul li{
+    position: relative;
+}
+.local_menu ul li::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: var(--primari_color);
+    transform-origin: center;
+    transition: .5s;
+}
+.local_menu ul li:hover::after{
+    transition: .5s;
+    width: 100%;
+}
+/* **********overvview css */
+.overview_section {
+    padding: 60px 0 60px;
+}
+.overview_content{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.overview_heading {
+    font-size: 130%;
+    font-weight: 600;
+    padding: 15px 0;
+    font-family: 'Cormorant Garamond';
+}
+
+.overview_wrapper p {
+    /* font-weight: 300; */
+    color: #717171;
+}
+
+.overview_wrapper {
+    width: 55%;
+}
+.overview_image {
+    width: 40%;
+    position: relative;
+}
+
+.overview_img img {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: -20px;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 0 40px 0 40px;
+}
+
+.overview_img {
+    background: grey;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100%;
+    border-radius: 0 60px 0 60px;
+}
+
+/* ************resto css */
+.dining_section {
+    padding: 50px 0;
+}
+
+
+.dining_wrapper {
+    max-height: 600px;
+    display: flex;
+    background: #0d1e33;
+}
+
+.dining_img_part {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.dining_img_part img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.dining_content_part {
+    width: 50%;
+    display: grid;
+    place-content: center;
+    padding: 0 50px;
+}
+.dining_content_part p {
+    color: #fff;
+    font-weight: 300;
+    line-height: 140%;
+    padding: 0 0 20px;
+}
+.dinig_titel {
+    text-align: left;
+    color: #fff;
+}
+.dinig_titel .subtitle-text{
+    padding: 0;
+}
+.subtitle-text::after, .subtitle-text::before {
+    display: none;
+}
+/* img grid css */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-grid img, .view-more {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+.image-grid img{
+    transition: .5s;
+    transform: scale(1);
+}
+.image-grid img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.view-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    font-size: 1.2em;
+    color: #333;
+    position: relative;
+}
+
+.view-more span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000004c;
+    color: #fff;
+}
+
+
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+.swiper-container {
+    width: 80%;
+    height: 80%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+
+}
+.hotel_room_listing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px 0;
+}
+.room_listing{
+    display: flex;
+    align-items: center;
+}
+.room_listing .hotel_card_content{
+    padding:0 20px;
+}
+.room_listing .hotel_card_image_wrap {
+    min-width: 240px;
+}
+.room_listing .hotel_card_image_wrap::before{
+    width: 140%;
+    top: -56%;
+    right: -124%;
+}
+
+.room_listing .hotel_card_image_wrap:hover::before {
+    transition: .5s;
+    opacity: 0;
+    top: 70%;
+    right: 85%;
+}
+.hotel_room_listing .best_hotel_card{
+    min-height: auto;
+}
+
+.ico_svg svg {
+    height: 30px;
+    width: 30px;
+}
+
+.ico_list_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.room_listing .hotel_amenties::after {
+    display: none;
+}
+.room_listing .hotel_location{
+    gap: 30px;
+}
+.gallery_section,.rooms_section {
+    padding: 60px 0;
+}
+
+.rooms_section .availibility_form {
+    box-shadow: 0 0 10px #000;
+}
+.attractions_section {
+    background-color: #0d1e33;
+    padding: 90px 0;
+    background-image: url(../image/yellowaura.png);
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+.attr_title{
+    font-size: 210%;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond';
+}
+.attr_grid_container {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    position: relative;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.attr_grid_item {
+    height: 300px;
+    position: relative;
+}
+
+.attr_grid_img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    transform: scale(1);
+    transition: .4s;
+}
+
+.attr_grid_img {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.attr_grid_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0009;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    transform: scale(0);
+}
+.attr_grid_item:hover .attr_grid_content{
+    transform: scale(1);
+    transition: .5s;
+}
+.attr_grid_item:hover .attr_grid_img img{
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.attr_grid_content_main {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10%;
+    text-align: center;
+    transition: .5s;
+}
+.attr_grid_content_main p {
+    padding: 30px 0;
+}
+
+.attr_grid_item:hover .attr_grid_content_main{
+    transition: .5s;
+    background-color:#ffffffa8 ;
 }
