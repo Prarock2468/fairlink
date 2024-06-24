@@ -50,30 +50,27 @@ $(document).ready(function () {
 });
 
 
-const body = document.getElementById('nav_header');
+const $body = $('#nav_header, .scroll_nav_wrapper');
 const scrollUp = "sticky-up";
 const scrollDown = "sticky-down";
 let lastScroll = 0;
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
+
+$(window).on('scroll', () => {
+  const currentScroll = $(window).scrollTop();
   if (currentScroll <= 70) {
-    body.classList.remove(scrollUp);
+    $body.removeClass(scrollUp);
     return;
   }
-  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+  if (currentScroll > lastScroll && !$body.hasClass(scrollDown)) {
     // down
-    body.classList.remove(scrollUp);
-    body.classList.add(scrollDown);
-  } else if (
-    currentScroll < lastScroll &&
-    body.classList.contains(scrollDown)
-  ) {
+    $body.removeClass(scrollUp).addClass(scrollDown);
+  } else if (currentScroll < lastScroll && $body.hasClass(scrollDown)) {
     // up
-    body.classList.remove(scrollDown);
-    body.classList.add(scrollUp);
+    $body.removeClass(scrollDown).addClass(scrollUp);
   }
   lastScroll = currentScroll;
 });
+
 
 // open mobile menu 
 $(document).ready(function () {

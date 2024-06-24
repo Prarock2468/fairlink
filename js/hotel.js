@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('viewMore').addEventListener('click', function() {
-        document.getElementById('imageGrid').classList.add('hidden');
-        document.getElementById('slider').classList.remove('hidden');
+$(document).ready(function() {
+    $('.img_grid_wrap').on('click', function() {
+        $('#imageGrid').addClass('hidden');
+        $('#slider').removeClass('hidden');
         
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
         });
     });
 
-    document.getElementById('closeButton').addEventListener('click', function() {
-        document.getElementById('slider').classList.add('hidden');
-        document.getElementById('imageGrid').classList.remove('hidden');
+    $('#closeButton').on('click', function() {
+        $('#slider').addClass('hidden');
+        $('#imageGrid').removeClass('hidden');
     });
 });

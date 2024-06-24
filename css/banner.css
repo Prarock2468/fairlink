@@ -1,3 +1,4 @@
+@import "detailpage.css";
 /* hero banner section css start */
 
 .hero_banner_content {
@@ -5,6 +6,7 @@
   left: 0;
   right: 0;
   bottom: 31px;
+  z-index: 2;
 }
 
 .hero_banner_row {
@@ -245,19 +247,13 @@ nav.tab_scroll_nav.tab_scroll_init ul {
 
 nav.tab_scroll_nav.tab_scroll_init {
   background: #ECF6F8;
-  padding: 11px 30px;
+  /* padding: 11px 30px; */
   border-radius: 4px 0 0 4px;
 }
-.tab_scroll_nav li a {
-	padding:0 30px;
-	height:100%;
-	height:40px;
-	line-height:40px;
+.tab_scroll_nav li {
+	padding: 15px 30px 12px;
 	position:relative;
-	font-weight:700;
-	color:#888DA0;
-	font-size:12px;
-	background: #ECF6F8;
+	color: var(--primari_color);
 }
 
 .tab_scroll_nav li:last-child {
@@ -365,7 +361,7 @@ nav.tab_scroll_nav.tab_scroll_init {
   font-weight: 700;
   transition: all 300ms linear;
   margin-bottom: 15px;
-  z-index: 999;
+  z-index: 9;
 
 }
 .toggle .icon {
@@ -674,44 +670,3 @@ nav.tab_scroll_nav.tab_scroll_init {
   border-top: 1px solid #eee;
 }
 /* hotel_reviews css start */
-
-
-
-
-
-
-
-
-
-
-.tabs {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.tabs li {
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: 0.3s;
-  background-color: transparent;
-}
-
-.tabs li a.active {
-  background-color: #ccc;
-}
-
-
-
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}

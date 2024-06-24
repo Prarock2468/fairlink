@@ -520,12 +520,14 @@
       <div class="scrn_container">
         <div class="tab_scroll_roe">
           <nav class="tab_scroll_nav tab_scroll_init">
-            <ul>
-              <li><a class="" href="#sec1">Top</a></li>
-              <li><a href="#sec2" class="act-scrlink">Details</a></li>
-              <li><a href="#sec3" class="">Amenities</a></li>
-              <li><a href="#sec4">Rooms</a></li>
-              <li><a href="#sec5">Reviews</a></li>
+            <ul class="localmenu">
+              <li data-target-segment="gallery" class="activeScroll"><a href="#gallery">Gallery</a></li>
+              <li data-target-segment="overview"><a href="#overview">Overview</a></li>
+              <li  data-target-segment="rooms"><a href="#rooms">Rooms & Suites</a></li>
+              <li data-target-segment="offers"><a href="#offers">Offers</a></li>
+              <li data-target-segment="dining"><a href="#dining">Dining</a></li>
+              <li data-target-segment="venues"><a href="#venues">Venues</a></li>
+              <li data-target-segment="reviews"><a href="#reviews">Reviews</a></li>
             </ul>
           </nav>
           <a href="#" class="tab_show_hidden_map btn">
@@ -539,24 +541,209 @@
       <div class="scrn_container">
         <div class="hotel_detail_row">
           <div class="hotel-detail-col-7">
-            <section class="hotel_service hotel_detail_box">
-              <div class="hotel_service_heading_3">
-                <h3>Amenities</h3>
+            <!-- hotel gallery**************************** -->
+            <section class="gallery_section segment" id="gallery" data-segment="gallery">
+              <div class="image-grid" id="imageGrid">
+                <div class="img_grid_wrap">
+                  <img src="./image/hero_img.jpg" alt="Image 1">
+                  <div class="img_grid_ico">
+                    <i class="icofont-search-1"></i>
+                  </div>
+                </div>
+                <div class="img_grid_wrap">
+                  <img src="./image/hero_img1.jpg" alt="Image 2">
+                  <div class="img_grid_ico">
+                    <i class="icofont-search-1"></i>
+                  </div>
+                </div>
+                <div class="img_grid_wrap">
+                  <img src="./image/hero_img2.jpg" alt="Image 3">
+                  <div class="img_grid_ico">
+                    <i class="icofont-search-1"></i>
+                  </div>
+                </div>
+                <div class="img_grid_wrap">
+                  <img src="./image/image.jpg" alt="Image 4">
+                  <div class="img_grid_ico">
+                    <i class="icofont-search-1"></i>
+                  </div>
+                </div>
+                <div class="img_grid_wrap">
+                  <img src="./image/image1.jpg" alt="Image 6">
+                  <div class="img_grid_ico">
+                    <i class="icofont-search-1"></i>
+                  </div>
+                </div>
+                <div class="img_grid_wrap">
+                  <img src="./image/image2.jpg" alt="Image 5">
+                  <span>View More</span>
+                </div>
+              </div>
+              <div class="slider hidden" id="slider">
+                <div class="close-button" id="closeButton"><i class="icofont-close-line"></i></div>
+                <div class="swiper-container gallery-swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/hero_img.jpg" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="./image/hero_img1.jpg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="./image/hero_img2.jpg" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="./image/hridey-10.jpeg" alt="Image 4"></div>
+                    <div class="swiper-slide"><img src="./image/image.jpg" alt="Image 5"></div>
+                    <div class="swiper-slide"><img src="./image/image1.jpg" alt="Image 6"></div>
+                    <div class="swiper-slide"><img src="./image/image2.jpg" alt="Image 7"></div>
+                    <div class="swiper-slide"><img src="./image/image3.jpg" alt="Image 8"></div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- Add Navigation -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- hotel over view**************************** -->
+            <section class="overview_section hotel_service hotel_detail_box segment" id="overview"
+              data-segment="overview">
+              <div class="overview_wrapper">
+                <div class="overview_title">
+                  Overview
+                </div>
+                <p>
+                  Welcome to Hridey Retreat, your gateway to serenity nestled in the heart of the enchanting
+                  landscapes of Nainital Corbett. Our boutique hotel is a haven for those seeking a perfect blend
+                  of
+                  nature's beauty and luxurious comfort.
+                </p>
+
+                <p>
+                  At Hridey Retreat, we believe in providing an unforgettable experience for our guests. The hotel
+                  is
+                  strategically located to offer panoramic views of the surrounding mountains, lush greenery, and
+                  the
+                  enchanting wildlife of Corbett. Whether you are a nature enthusiast, an adventure seeker, or
+                  simply
+                  someone looking for a peaceful escape, Hridey Retreat is the ideal destination.
+                </p>
+
+                <p>
+                  Our well-appointed rooms and suites are designed to offer a harmonious blend of modern amenities
+                  and
+                  the warmth of nature. Each room is tastefully decorated, providing a cozy retreat after a day of
+                  exploring the scenic beauty that Nainital Corbett has to offer.
+                </p>
+                <p>
+                  For those seeking adventure, Hridey Retreat provides a range of recreational activities. Whether
+                  it's a nature walk, bird watching, or a thrilling safari in Corbett National Park, our team
+                  ensures
+                  that every moment is filled with excitement and exploration.
+                </p>
+              </div>
+            </section>
+            <!-- *********************amenties section -->
+            <div class="hotel_service hotel_detail_box segment" id="rooms" data-segment="rooms">
+              <div class="overview_title">
+                Amenities
               </div>
               <div class="hotel_service_listing hotel_service_wrap">
-                <ul>
-                  <li><i class="fal fa-rocket"></i> Elevator in building</li>
-                  <li><i class="fal fa-wifi"></i> Free Wi Fi</li>
-                  <li><i class="fal fa-parking"></i> Free Parking</li>
-                  <li><i class="fal fa-snowflake"></i> Air Conditioned</li>
-                  <li><i class="fal fa-plane"></i>Airport Shuttle</li>
-                  <li><i class="fal fa-paw"></i> Pet Friendly</li>
-                  <li><i class="fal fa-utensils"></i> Restaurant Inside</li>
-                  <li><i class="fal fa-wheelchair"></i> Wheelchair Friendly</li>
+                <ul class="amenties_listing">
+                  <li>
+                    <span>
+                      <i class="icofont-duotone icofont-dashboard"></i>
+                    </span>
+                    Elevator in building
+                  </li>
+                  <li>
+                    <span><i class="icofont-ui-wifi"></i></span>
+                    Free Wi Fi
+                  </li>
+                  <li>
+                    <span>
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m12 21.933a9.933 9.933 0 1 1 9.933-9.933 9.944 9.944 0 0 1 -9.933 9.933zm0-18.866a8.933 8.933 0 1 0 8.933 8.933 8.943 8.943 0 0 0 -8.933-8.933z" />
+                        <path
+                          d="m12.569 8.5h-1.75a.749.749 0 0 0 -.75.75v5.74a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-1.49h1.5a2.5 2.5 0 0 0 0-5zm0 4h-1.5v-3h1.5a1.5 1.5 0 0 1 0 3z" />
+                      </svg>
+                    </span>
+                    Free Parking
+                  </li>
+                  <li>
+                    <span>
+                      <svg viewBox="0 0 1022.001 1054.237" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M111.457 21.333h798.766l.58-.002c30.613 0 58.325 12.426 78.366 32.51 20.094 20.262 32.51 48.163 32.51 78.963v.474-.025 354.383c.02.816.033 1.776.033 2.74 0 61.555-49.9 111.456-111.456 111.456H753.722V466.69H267.96v135.14H111.22c-30.618 0-58.335-12.423-78.384-32.506l-.002-.002C12.63 549.104.104 521.212 0 490.394V133.25v-.468c0-30.795 12.417-58.69 32.516-78.95l-.007.006c20.042-20.084 47.754-32.51 78.367-32.51.204 0 .408.002.61.003h-.03zm.464 46.44h-.641c-17.9 0-34.097 7.28-45.796 19.038l-.003.004c-11.766 11.83-19.04 28.137-19.04 46.144v.312-.016 357.123c.05 18.015 7.37 34.31 19.18 46.115 11.688 11.68 27.83 18.9 45.66 18.9h110.239v-135.14h578.64v135.14h110.086c35.907 0 65.016-29.108 65.016-65.015 0-.604-.008-1.206-.025-1.807l.002.088V133.253v-.257c0-18.02-7.273-34.34-19.044-46.186l.003.003c-11.703-11.762-27.9-19.04-45.8-19.04H111.922zM333.44 599.51h-88.7v-46.44h88.7zm443.5 0h-88.7v-46.44h88.7zm-443.5 313.005c-61.563-.494-111.347-50.23-111.92-111.726v-.056l46.44-.232c0 36.164 29.317 65.48 65.48 65.48s65.48-29.317 65.48-65.48v-221.89h46.44v221.983c-.08 61.78-50.14 111.84-111.913 111.92h-.008zm354.243 132.818h-.002c-61.554 0-111.455-49.9-111.455-111.456 0-.212 0-.424.002-.636v.034-354.662h46.44v354.8c0 36.165 29.317 65.48 65.48 65.48s65.48-29.316 65.48-65.48h46.44c-.08 61.78-50.14 111.842-111.913 111.92h-.008zm177.958-800.16h-88.7v-46.44h88.7zm-177.4 0h-532.2v-46.44h532.2z" />
+                      </svg>
+
+                    </span>
+                    Air Conditioned
+                  </li>
+                  <li>
+                    <span>
+                      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <path d="m42.5 30.1-3.5-2.4c-.5-.3-1.2-.2-1.5.4l-1.1 2" stroke-miterlimit="10" />
+                          <path d="m47.6 51.7-20.6.4" />
+                          <path
+                            d="m8.1 52.1c-.9-.2-1.7-.5-1.8-1-.1-1-.3-3.8-.3-5.1 0-.5.1-1.1.4-1.5 1.1-2 4.8-6.8 14.9-6.4l10.3-6.9c.5-.3 1.1-.5 1.6-.5l19.6-.1c.3 0 .6 0 .9.1 2.2.6 11.7 4 10.4 12.6l1.1.6c.5.2.9.7 1 1.2.4 1.4.3 2.9-.2 4.3" />
+                          <path d="m24.9 40.6 30.2-.2v-4.5" />
+                          <circle cx="17.3" cy="51.1" r="5" />
+                          <circle cx="57.1" cy="51.1" r="5" />
+                          <path d="m12.3 43.6-1.8 2.2-3.7-.1" />
+                          <path d="m24.1 44.1h26" stroke-miterlimit="10" />
+                        </g>
+                      </svg>
+
+                    </span>
+                    Airport Shuttle
+                  </li>
+                  <li>
+                    <span>
+                      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <g
+                          style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2">
+                          <path
+                            d="m58.6667 35.9167c.6667 1.6979.8506 2.9638.5159 4.5011l-1.1322 5.2009 1.9496 6.1068s.1206 4.7698.0014 8.2786c-.0369 1.087-.9494 1.9752-2.0371 1.9751h-.3531c-1.3464 0-1.9256-1.3248-1.9256-2.6712l-.8522-8.3913s-7.4907-5.4667-6.4583-13.6042" />
+                          <path d="m33.5155 46.5c3.8333-.2052 11.2345 0 14.9845-2.6875" />
+                          <path
+                            d="m51.6253 13.25c5.7603 1.5458 8.0746 4.2902 8.6494 7.2047 1.0392 5.269-4.012 9.798-9.2239 8.5024-2.5257-.6278-4.6488-.4429-4.6488-.4429l-18.402-.1392c-1.6875-8.125-6.4473-9.565-6.4473-9.565-.8653-5.56-4.3027-5.56-4.3027-5.56l-.6995 4.8391-1.4644.2501c-.7843.1339-1.5121.4951-2.0931 1.0387l-1.3525 1.2654-4.1141.4425c-.7613.0819-1.229.8738-.9332 1.5801l.8806 2.1021c.2896.6913.9063 1.1916 1.6425 1.3325l6.4671.7328s-1 13.1667 2.7292 15.1667c8.1309 4.3607 4.4071 16.5216 4.4071 16.5216-.8217 1.4362-.1868 3.4576 1.4679 3.4576h.0015c.7939 0 1.5235-.4367 1.8987-1.1364l2.0998-5.4678 1.3773-9.1449c.1081-.7178-.0364-1.4427-.3653-2.0898-.576-1.1333-1.2538-3.3607-.137-6.5257" />
+                          <path
+                            d="m16.2346 40.3005-4.3515 6.655c-.3212.4697-.5044 1.03-.5192 1.6187-.044 1.7553-.2547 5.5414 2.9991 7.69.8545.5642 2.4644.6389 3.3141.1114.7175-.4455 1.3028-1.2911.7739-2.8914" />
+                          <path d="m20.534 45.4366-4.409 3.0798" />
+                          <path
+                            d="m46.4167 48.5164c.4329 1.5669 3.0772 3.003 4.25 3.7336l-1.0698 7.1428c0 .6523.1869 1.281.5906 1.7322 1.0625 1.1875 2.4301.6653 2.4301.6653" />
+                        </g>
+                      </svg>
+
+                    </span>
+                    Pet Friendly
+                  </li>
+                  <li>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                        <path
+                          d="M13.002,11.705L.738,23.969,.031,23.262,12.296,10.997l-1.564-1.568c-.472-.471-.732-1.099-.732-1.767s.26-1.296,.732-1.768L16.639-.012l.707,.707-5.906,5.906c-.283,.283-.439,.66-.439,1.061s.156,.777,.439,1.061l1.563,1.567,6.964-6.964,.707,.707-6.965,6.965,1.558,1.562c.584,.584,1.536,.584,2.121,0l5.906-5.906,.707,.707-5.906,5.906c-.487,.487-1.127,.731-1.768,.731s-1.28-.244-1.768-.731l-1.558-1.562Zm-6.306,2.063l.708-.708C2.716,9.31,1.001,4.015,1.001,2.048v-.367c0-.409,.249-.57,.397-.629,.078-.031,.173-.051,.275-.051,.183,0,.387,.064,.557,.244l5.786,6.252c.016-.425,.096-.835,.225-1.229L2.96,.561C2.456,.027,1.697-.144,1.028,.123,.394,.375,0,.973,0,1.683v.365c0,2.094,1.787,7.722,6.696,11.72Zm9.631,2.229c-.165,0-.324-.03-.486-.047l.886,.957c-1.802-.228-3.397-.677-4.843-1.255l-.782,.782c1.914,.818,4.12,1.388,6.651,1.582l5.495,5.938,.734-.68-6.811-7.359c-.276,.052-.557,.082-.844,.082Z" />
+                      </svg>
+
+                    </span>
+                    Restaurant Inside
+                  </li>
+                  <li>
+                    <span>
+                      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m17.854 13.146c-.195-.195-.512-.195-.707 0l-.651.651-2.729-2.656c-.002-.002-.003-.003-.005-.004-.007-.007-.015-.013-.022-.019-.006-.005-.011-.009-.017-.014s-.013-.01-.02-.014c-.007-.005-.014-.01-.021-.014-.006-.003-.011-.007-.017-.01-.008-.005-.017-.01-.026-.014-.006-.003-.011-.005-.017-.008-.009-.004-.018-.008-.027-.012-.007-.003-.014-.005-.021-.007-.008-.003-.016-.006-.024-.008s-.018-.004-.027-.006c-.007-.001-.013-.003-.02-.004-.01-.002-.02-.003-.031-.004-.006-.001-.011-.002-.017-.002-.01-.001-.02-.001-.03-.001-.006 0-.012 0-.019 0-.009 0-.018.001-.026.002s-.016.001-.023.002-.015.002-.022.003c-.009.002-.019.003-.028.005-.002.001-.004.001-.007.001l-3.945.953c-.106.026-.199.013-.26-.035s-.095-.135-.095-.244v-1.688h3.5c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-3.5v-3.05c.162.033.329.05.5.05 1.378 0 2.5-1.122 2.5-2.5s-1.122-2.5-2.5-2.5-2.5 1.122-2.5 2.5c0 .816.393 1.542 1 1.999v6.189c0 .416.174.792.476 1.03.218.172.49.262.777.262.111 0 .223-.013.336-.041l3.677-.888 2.885 2.808c.097.094.223.142.349.142.128 0 .256-.049.354-.146l1-1c.195-.195.195-.512 0-.707zm-8.354-11.146c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5-1.5-.673-1.5-1.5.673-1.5 1.5-1.5z" />
+                        <path
+                          d="m7.5 20c-3.584 0-6.5-2.916-6.5-6.5 0-1.547.552-3.045 1.556-4.22.992-1.161 2.363-1.939 3.862-2.191.272-.046.53.138.576.41s-.138.53-.41.576c-2.655.446-4.583 2.727-4.583 5.424 0 3.033 2.467 5.5 5.5 5.5 2.697 0 4.978-1.927 5.424-4.583.046-.272.304-.456.576-.41s.456.303.41.576c-.251 1.498-1.029 2.87-2.191 3.862-1.174 1.003-2.673 1.556-4.22 1.556z" />
+                      </svg>
+
+                    </span>
+                    Wheelchair Friendly
+                  </li>
                 </ul>
               </div>
               <div class="hotel_service_bottom_border"></div>
-            </section>
+              <!-- *******************accrodion section -->
             <div class="accordion mar-top">
               <div class="accordion_row">
                 <a class="toggle act-accordion" href="#"> Details option <span class="icon">-</span></a>
@@ -586,9 +773,12 @@
                 </div>
               </div>
             </div>
-            <section class="hotel_room_section  hotel_detail_box">
-              <div class="hotel_service_heading_3">
-                <h3>Amenities</h3>
+            </div>
+            
+            <!-- ********************hotel romm section -->
+            <div class="hotel_room_section  hotel_detail_box">
+              <div class="overview_title">
+                Rooms & suites
               </div>
               <div class="hotel-room_item_container">
                 <div class="hotel-room_item hotel_row">
@@ -936,6 +1126,11 @@
             <section class="hotel_reviews_section hotel_detail_box">
               <div class="hotel_service_heading_3">
                 <h3>Reviews</h3>
+            </div>
+            <!-- *******************hotel review section -->
+            <div class="hotel_reviews_section hotel_detail_box segment" id="reviews" data-segment="reviews">
+              <div class="overview_title">
+                Reviews
               </div>
               <div class="hotel_reviews_row">
                 <div class="hotel_reviews_score-total hotel_col_left">
@@ -1049,7 +1244,46 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+            <!-- *******************add review section -->
+            <div class="hotel_create_review_section hotel_detail_box">
+              <div class="overview_title">
+                Amenities
+              </div>
+              <div class="review_wrapper">
+                <div class="review_box">
+                  <div class="review_form_control">
+                    <label for="slider1">Cleanliness</label>
+                    <input type="range" class="review_control" id="slider1" min="0" max="5" step="0.5" value="2.5">
+                    <span id="value1">2.5</span>
+                  </div>
+
+
+                  <div class="review_form_control">
+                    <label for="slider2">Cleanliness</label>
+                    <input type="range" class="review_control" id="slider2" min="0" max="5" step="0.5" value="2.5">
+                    <span id="value2">2.5</span>
+                  </div>
+
+
+                  <div class="review_form_control">
+                    <label for="slider3">Cleanliness</label>
+                    <input type="range" class="review_control" id="slider3" min="0" max="5" step="0.5" value="2.5">
+                    <span id="value3">2.5</span>
+                  </div>
+
+
+                  <div class="review_form_control">
+                    <label for="slider4">Cleanliness</label>
+                    <input type="range" class="review_control" id="slider4" min="0" max="5" step="0.5" value="2.5">
+                    <span id="value4">2.5</span>
+                  </div>
+                </div>
+                <div class="review_rating">Average Rating <div id="averageRating">2.5</div>
+                </div>
+              </div>
+
+            </div>
           </div>
           <div class="hotel-detail-col-3">
             <div class="hotel_service_box">
@@ -1088,6 +1322,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/hotel.js"></script>
+  <script src="./js/scrollnav.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1112,6 +1347,29 @@
         });
       });
     });
+
+  </script>
+  <script>
+    // Function to update slider value displays and calculate average rating
+    function updateSliderValueAndCalculateAverage() {
+      const slider1 = parseFloat($('#slider1').val());
+      const slider2 = parseFloat($('#slider2').val());
+      const slider3 = parseFloat($('#slider3').val());
+      const slider4 = parseFloat($('#slider4').val());
+
+      const average = (slider1 + slider2 + slider3 + slider4) / 4;
+      $('#value1').text(slider1.toFixed(1));
+      $('#value2').text(slider2.toFixed(1));
+      $('#value3').text(slider3.toFixed(1));
+      $('#value4').text(slider4.toFixed(1));
+      $('#averageRating').text(average.toFixed(1));
+    }
+
+    // Attach input event listeners to update display and calculate average when sliders are moved
+    $('#slider1, #slider2, #slider3, #slider4').on('input', updateSliderValueAndCalculateAverage);
+
+    // Initial calculation and display update
+    updateSliderValueAndCalculateAverage();
 
   </script>
 
