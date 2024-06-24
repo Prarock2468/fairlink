@@ -1,0 +1,255 @@
+
+.scrolled{
+  position: fixed;
+  background: #ecf6f8;
+  width: 100%;
+  top: 0;
+  right: 0;
+  /* box-shadow: 0px 1px 2px #cecece; */
+  z-index: 50;
+  transition: .5s;
+}
+.scrolled.sticky-up {
+  top: 50px;
+  transition: .5s;
+}
+.segment{
+  min-height: 280px;
+}
+.activeScroll{
+  background-color: #0d1e33;
+  font-size: 120%;
+}
+
+.review_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review_box {
+  width: 75%;
+  padding: 3%;
+  line-height: 180%;
+}
+
+.review_rating {
+  width: 25%;
+  background: grey;
+  padding: 5%;
+  text-align: center;
+}
+
+div#averageRating {
+  font-size: 300%;
+}
+
+.review_control {
+  width: 50%;
+  margin: 0 40px;
+}
+
+
+/* *image grid */
+
+.image-grid {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3 "
+    "img4 img4 img5"
+    "img4 img4 img6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  /* padding: 10px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-grid img, .view-more {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.image-grid img{
+  transition: .5s;
+  transform: scale(1);
+}
+.image-grid img:hover{
+  transition: .5s;
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+.img_grid_wrap span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ad;
+  color: #fff;
+}
+
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+
+}
+.img_grid_wrap {
+  position: relative;
+  overflow: hidden;
+}
+.img_grid_wrap:nth-child(1){
+  grid-area: img1;
+}
+.img_grid_wrap:nth-child(2){
+  grid-area: img2;
+}
+.img_grid_wrap:nth-child(3){
+  grid-area: img3;
+}
+.img_grid_wrap:nth-child(4){
+  grid-area: img4;
+}
+.img_grid_wrap:nth-child(5){
+  grid-area: img5;
+}
+.img_grid_wrap:nth-child(6){
+  grid-area: img6;
+}
+.gallery-swiper-container {
+  width: 80%;
+  height: 90%;
+}
+.gallery-swiper-container .swiper-slide-active{
+width:80%;
+}
+.gallery-swiper-container .swiper-slide img {
+  width: 100%;
+  height: 90%;
+}
+.img_grid_ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000006e;
+  transition: .5s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.img_grid_ico i {
+  padding: 10px;
+  color: #fff;
+  background: var(--primari_color);
+  border-radius: 50%;
+  box-shadow: 0 0 2px 10px #ffffffe0;
+  margin-top: -20px;
+  transition: .5s;
+}
+
+.img_grid_wrap:hover .img_grid_ico {
+  opacity: 1;
+  transition: .5s;
+}
+
+.img_grid_wrap:hover .img_grid_ico i {
+  margin-top: 0;
+  transition: .5s;
+}
+/* *****image grid end */
+/* overview csss */
+.overview_title {
+  font-size: 170%;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 25px;
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+  color: var(--primari_color);
+}
+
+.overview_wrapper p {
+  font-size: 120%;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+
+/* review css */
+.review_form_control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--primari_color);
+}
+.review_form_control input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+.review_form_control input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none; 
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--primari_color);
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px var(--primari_color);
+}
+
+
+.amenties_listing li span svg {
+  width: 30px;
+  height: 30px;
+}
+
+.amenties_listing li {
+  display: flex;
+  align-items: center;
+}
+
+.amenties_listing li span {
+  padding: 0 20px;
+  font-size: 230%;
+}

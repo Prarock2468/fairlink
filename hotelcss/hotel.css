@@ -85,7 +85,7 @@
     width: 100%;
 }
 /* **********overvview css */
-.overview_section {
+/* .overview_section {
     padding: 60px 0 60px;
 }
 .overview_content{
@@ -102,10 +102,10 @@
 
 .overview_wrapper p {
     /* font-weight: 300; */
-    color: #717171;
-}
+    /* color: #717171;
+} */
 
-.overview_wrapper {
+/* .overview_wrapper {
     width: 55%;
     font-size: 110%;
 }
@@ -131,7 +131,7 @@
     margin-top: 20px;
     height: 100%;
     border-radius: 0 60px 0 60px;
-}
+} */ */
 
 /* ************resto css */
 .dining_section {
@@ -179,7 +179,7 @@
 .subtitle-text::after, .subtitle-text::before {
     display: none;
 }
-/* img grid css */
+/* img grid css
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -244,15 +244,7 @@
 .hidden {
     display: none;
 }
-.swiper-container {
-    width: 80%;
-    height: 80%;
-}
 
-.swiper-slide img {
-    width: 100%;
-    height: auto;
-}
 .close-button {
     position: absolute;
     top: 20px;
@@ -261,7 +253,7 @@
     color: white;
     cursor: pointer;
 
-}
+} */
 .hotel_room_listing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
