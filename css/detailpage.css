@@ -1,4 +1,6 @@
-
+.gallery_section{
+  padding: 30px 0;
+}
 .scrolled{
   position: fixed;
   background: #ecf6f8;
@@ -66,21 +68,18 @@ div#averageRating {
   overflow: hidden;
 }
 
-.image-grid img, .view-more {
+.image-grid img {
   width: 100%;
   height: 100%;
   cursor: pointer;
   object-fit: cover;
-}
-
-.image-grid img{
   transition: .5s;
   transform: scale(1);
 }
-.image-grid img:hover{
+
+.img_grid_wrap:hover img{
   transition: .5s;
   transform: scale(1.2);
-  z-index: 5;
 }
 
 .img_grid_wrap span{
@@ -252,4 +251,119 @@ width:80%;
 .amenties_listing li span {
   padding: 0 20px;
   font-size: 230%;
+}
+
+/* right side css */
+.hotel_detail_right{
+  margin: 30px 0;
+}
+
+.offers_card_content {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 2px 5px 8px #000;
+  /* display: flex; */
+  align-items: end;
+  justify-content: center;
+}
+
+.offers_card_content img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transform: scale(1);
+  transition: .5s;
+}
+
+.offers_card_content:hover img{
+  transform: scale(1.2);
+  transition: .5s;
+}
+.offers_card_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 35%;
+  width: 100%;
+  padding: 0 30px;
+  font-size: 180%;
+  background: linear-gradient(0deg, black 2%, transparent);
+  color: white;
+  text-align: center;
+}
+.button_des .btn {
+    padding: 10px 20px;
+    font-size: 50%;
+}
+
+.button_des {
+    padding: 15px 0;
+}
+.data_ico svg {
+  width: 18px;
+  height: 18px;
+  margin-top: -5px;
+}
+
+.contact_data_row {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.data_heading {
+  width: 35%;
+}
+
+.data_text {
+  width: 65%;
+}
+
+.nearby_row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.nearby_left {
+  width: 35%;
+}
+.nearby_right {
+  width: 65%;
+}
+
+.nearby_image img {width: 100%;object-fit: cover;}
+
+.nearby_headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.nearby_heading {
+  font-size: 120%;
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+}
+
+.nearby_right p {
+  font-size: 90%;
+  color: #858585;
+}
+.nearby_left .nearby_btn{
+  display: block;
+  width: 100%;
+  padding: 10px 22px;
+  height: auto;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.nearby_distance {
+    color: #0d1e33;
 }
