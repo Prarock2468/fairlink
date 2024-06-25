@@ -233,7 +233,7 @@ h2.hero_banner_heading_h2 span {
 
 
 section.hotel_details_section {
-  padding: 30px 0;
+  /* padding: 30px 0; */
   background-color: #fff;
 }
 
@@ -246,13 +246,14 @@ section.hotel_details_section {
 nav.tab_scroll_nav.tab_scroll_init ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
+  /* justify-content: left; */
 }
 
 nav.tab_scroll_nav.tab_scroll_init {
-  background: #ECF6F8;
+  /* background: #ECF6F8; */
   /* padding: 11px 30px; */
-  border-radius: 4px 0 0 4px;
+  /* border-radius: 4px 0 0 4px; */
 }
 .tab_scroll_nav li {
 	padding: 15px 30px 12px;
@@ -264,7 +265,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 	border-radius:0 4px 4px 0 ;
 }
 .tab_scroll_nav li:first-child  {
-	border-radius:4px 0 0 4px;
+	/* border-radius:4px 0 0 4px; */
 }
 
 .tab_scroll_nav li a.act-scrlink {
@@ -274,17 +275,7 @@ nav.tab_scroll_nav.tab_scroll_init {
   background-color: #F9B90F;
 }
 
-.btn{
-	position:relative;
-	color: #fff;
-	border-radius:4px;
-	height:40px;
-	line-height:40px;
-	padding:0 25px;
-	font-size:12px;
-	font-weight:600;
-    background: #F9B90F;
-}
+
 
 
 .hotel_detail_row {
@@ -303,7 +294,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 
 
 .hotel_detail_box {
-  padding: 30px 30px;
+  padding: 30px;
   background: #fff;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -333,81 +324,21 @@ nav.tab_scroll_nav.tab_scroll_init {
 .hotel_service_wrap ul{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
 }
 .hotel_service_wrap li{
-    width: 33.3%;
-    margin-bottom: 15px;
-    font-size: 13px;
     color: #000;
     font-weight: 600;
     position: relative;
-    padding-left: 30px;
+    gap: 30px;
+    column-count: 3;
+    width: calc(30% - 10px);
 }
 
 /* section.hotel_details_section  css start */
 
-/* accordion css start */
 
-.accordion_row {
-  display: flex;
-  flex-direction: column;
-}
-
-.toggle {
-  border: 1px solid #eee;
-  padding: 18px 50px 18px 30px;
-  width: 100%;
-  position: relative;
-  background: #F9B90F;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 13px;
-  font-weight: 700;
-  transition: all 300ms linear;
-  margin-bottom: 15px;
-  z-index: 9;
-
-}
-.toggle .icon {
-  position: absolute;
-  font-size: 36px;
-  right: 0px;
-  top: 50%;
-  border-radius: 0px 2px 2px 0px;
-  color: #fff;
-  transform: translateY(-50%);
-  background-color: #0d1e33;
-  width: 74px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.accordion-inner {
-  display: none;
-  width: 100%;
-  position: relative;
-  padding: 20px 30px 15px;
-  background: #fff;
-  margin: 0 0 15px;
-  text-align: left;
-  border-radius: 4px;
-  border: 1px solid #eee;
-}
-.accordion-inner p{
-  font-size: 13px;
-    line-height: 24px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    color: #878C9F;
-}
-
-.accordion-inner.visible {
-  display: block;
-}
-
-/* accordion css end */
 
  /* hotle room css start */
 .hotel-room_item{
@@ -431,8 +362,10 @@ nav.tab_scroll_nav.tab_scroll_init {
   height: auto;
 }
 .hotel_room_services_padding{
-  padding: 10px !important;
+  padding: 10px 0 !important;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel_room_bottom{
@@ -440,26 +373,22 @@ nav.tab_scroll_nav.tab_scroll_init {
   bottom: 4px;
   left: 0;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 60px 0 20px;
+  padding: 15px 20px;
   color: #fff;
-  font-size: 10px;
+  font-size: 70%;
   z-index: 10;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #F9B90F;
+  background-color: var(--second_color);
 }
 .hotel_room_bottom i{
   position: absolute;
-    right: 0;
-    top: 0;
-    height: 40px;
-    line-height: 40px;
-    width: 50px;
-    border-left: 1px solid rgba(0, 0, 0, 0.21);
-    text-align: center;
-    font-size: 32px;
+  right: 0;
+  top: 0;
+  border-left: 1px solid var(--white);
+  text-align: center;
+  font-size: 270%;
+  padding: 6px 12px;
 }
 
 .hotel_rooms_details_header {
@@ -471,7 +400,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 
 .hotel_rooms_details_bg h3 {
   padding-bottom: 3px;
-  font-size: 18px;
+  font-size: 170%;
   font-weight: 700;
   color: #000;
 }
@@ -479,7 +408,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 .hotel_rooms_details_bg h5 {
   font-size: 16px;
   font-weight: 700;
-  color: #F9B90F;
+  color: var(--text_color);
   margin-left: 2px;
   display: flex;
   align-items: baseline;
@@ -491,9 +420,9 @@ nav.tab_scroll_nav.tab_scroll_init {
 
 
 .hotel_rooms_price{
-     color: #F9B90F;
-    font-size: 19px;
-    font-weight: 600;
+     color: var(--text_color);
+     font-size: 140%;
+     font-weight: 600;
 }
 .hotel_rooms_price strong{
   font-size: 14px;
@@ -501,27 +430,10 @@ nav.tab_scroll_nav.tab_scroll_init {
 }
 
 .hotel_room_titel p {
-  font-size: 18px;
+  font-size: 93%;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 150%;
   margin: 23px 0;
-}
-.btn.btn_wrapper_bg {
-  font-size: 19px;
-}
-
-.btn_wrapper_bg i{
-   position: absolute;
-   right: 0;
-   width: 50px;
-   height: 39px;
-   display: flex;
-   align-items: center;
-   line-height: 44px;
-   border-left: 1px solid rgba(255, 255, 255, 0.21);
-   top: 0;
-   justify-content: center;
-   font-size: 26px;
 }
 
  /* hotle room css end */
@@ -575,7 +487,7 @@ nav.tab_scroll_nav.tab_scroll_init {
   width: calc(75% - 10px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 25px;
 }
 .hotel_score_item_row {
   position: relative;
@@ -606,7 +518,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 .hotel_reviews_color_bg{
   display: block;
   height: 12px;
-  background-color:#F9B90F;
+  background-color: var(--second_color);
   border-radius: 10px 0 0 10px;
 }
 
