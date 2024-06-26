@@ -250,11 +250,7 @@ nav.tab_scroll_nav.tab_scroll_init ul {
   /* justify-content: left; */
 }
 
-nav.tab_scroll_nav.tab_scroll_init {
-  /* background: #ECF6F8; */
-  /* padding: 11px 30px; */
-  /* border-radius: 4px 0 0 4px; */
-}
+
 .tab_scroll_nav li {
 	padding: 15px 30px 12px;
 	position:relative;
@@ -264,9 +260,7 @@ nav.tab_scroll_nav.tab_scroll_init {
 .tab_scroll_nav li:last-child {
 	border-radius:0 4px 4px 0 ;
 }
-.tab_scroll_nav li:first-child  {
-	/* border-radius:4px 0 0 4px; */
-}
+
 
 .tab_scroll_nav li a.act-scrlink {
 	color:#fff;
@@ -332,7 +326,6 @@ nav.tab_scroll_nav.tab_scroll_init {
     font-weight: 600;
     position: relative;
     gap: 30px;
-    column-count: 3;
     width: calc(30% - 10px);
 }
 
@@ -356,10 +349,13 @@ nav.tab_scroll_nav.tab_scroll_init {
   overflow: hidden;
   border-radius: 6px 6px 6px 0;
 }
+.hotel_room-images {
+  height: 100%;
+}
 .hotel_room-images img {
   width: 100%;
   object-fit: cover;
-  height: auto;
+  height: 95%;
 }
 .hotel_room_services_padding{
   padding: 10px 0 !important;
@@ -434,6 +430,11 @@ nav.tab_scroll_nav.tab_scroll_init {
   font-weight: 400;
   line-height: 150%;
   margin: 23px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
  /* hotle room css end */
@@ -588,3 +589,92 @@ nav.tab_scroll_nav.tab_scroll_init {
   border-top: 1px solid #eee;
 }
 /* hotel_reviews css start */
+
+
+/* responsive css */
+@media screen and (max-width:1025px) {
+  .tab_scroll_nav li {
+    padding: 15px 20px 12px;
+  }
+  .hotel_detail_box {
+    padding: 10px 30px;
+  }
+  .hotel-detail-col-3 .hotel_detail_box {
+    padding: 10px;
+  }
+  .overview_title {
+    padding-bottom: 10px;
+  }
+  .hotel_room_titel p{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .tab_scroll_roe{
+    display: none;
+  }
+  .hotel_detail_row{
+    display: block;
+  }
+  .hotel-detail-col-3,.hotel-detail-col-7{
+    width: 100%;
+  }
+  .hotel-detail-col-3 .hotel_detail_box{
+    padding: 30px;
+  }
+  .dinig_titel .heading-title{
+    font-size: 175%;
+  }
+  .dining_content_part .swiper-slide {
+    padding: 0 20px;
+}
+  .nearby_heading {
+  font-size: 190%;
+}
+}
+@media screen and (max-width:576px) {
+  .hotel_detail_box {
+    padding: 10px 10px;
+}
+.hero_banner_price{
+  display: none;
+}
+.hotel-detail-col-3 .hotel_detail_box {
+  padding: 10px 10px;
+}
+.hotel_service_wrap ul {
+  display: grid;
+  gap: 14px;
+}
+.hotel_service_wrap li{
+  width: 100%;
+}
+.dining_wrapper{
+  max-height: 100%;
+  display: block;
+}
+.dining_img_part,.dining_content_part{
+  width: 100%;
+  min-height:50%;
+}
+.dining_content_part{
+  padding: 40px 10px 70px;
+}
+.dining_nav_btns{
+  bottom: 4%;
+  width: 100%;
+  right: 0;
+  justify-content: center;
+}
+.hotel_row{
+  display: block;
+}
+.hotel_reviews_comments{
+  display: block;
+}
+.hotel_reviews_images img {
+  width: 40px;
+  height: 40px;
+}
+}
