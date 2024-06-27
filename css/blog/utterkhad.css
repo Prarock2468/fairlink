@@ -1,0 +1,9 @@
+.utterkhad_banner{
+  height: 80vh;
+  background-image: url(.../image/utterkhand-hotel-baner.avif) !important;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  position: relative;
+  animation: alternate;
+}

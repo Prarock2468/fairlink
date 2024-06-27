@@ -1,4 +1,6 @@
 /* availibility form */
+@import "../css/blog/bloghero.css";
+
 .availibility_form_wrapper {
   position: relative;
   margin-top: -100px;
