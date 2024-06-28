@@ -184,7 +184,7 @@ section.newsLetter_wrapper {
 .dark_color {
   background: var(--primari_color) !important;
   border-color: var(--primari_color);
-  border-radius: 3px;
+  border-radius: 30px;
 }
 
 .news_col_right {
