@@ -1,3 +1,6 @@
+@import url('./blog/bloghero.css');
+@import url('./blog/utterkhad.css');
+
 /* availibility form */
 .availibility_form_wrapper {
   position: relative;
@@ -6,7 +9,7 @@
 }
 
 .availibility_form {
-  margin: auto;
+  margin: auto; 
   padding: 50px;
   background: #fff;
   max-width: 1140px;
